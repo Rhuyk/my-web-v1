@@ -1,0 +1,214 @@
+body{
+    background-image: url(eldenRingBackGround_cropped5.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /*background-color: rgb(137, 207, 240);*/
+    margin: 0;
+}
+
+/* --- Navigation Bar --- */
+.navbar ul{
+    background: linear-gradient(to right, black 50%, rgb(0, 0, 100));
+    position: fixed;
+    overflow: auto;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
+.navbar img{
+    display: block;
+    float: left;
+    height: 35px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.navbar a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.navbar a:hover{
+    background-color: rgb(250, 249, 246);
+    color: black;
+}
+.navbar li{
+    float: left;
+}
+
+/* --- Home Page --- */
+#home_main{
+    display: flex;
+    justify-content: center;
+
+    width: auto;
+    height: auto;
+    margin-top: 140px; 
+}
+#home_main div{
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    
+    border-radius: 160px;
+    animation: shadowAnimation 7s infinite;
+}
+.pfp{
+    /*background-color: rgba(164, 164, 164, 0.8);*/
+    background: radial-gradient(rgb(180, 180, 180) 30%, rgba(0, 0, 0, 0));
+    float: right;
+    height: 280px;
+    width: auto;
+    border-radius: 50%;
+}
+#home_main section{
+    margin: 30px;
+    
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.mains{
+    background-color: rgba(0, 0, 46, 0.95);
+    color: white;
+    border-radius: 30px;
+    margin: 50px;
+    margin-top: 105px;
+    padding: 50px;
+    width: auto;
+    height: auto;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    padding: 40px;
+}
+#profile{
+    contain: content;
+    float: left;
+}
+#profile .pfp{
+    height: 300px;
+    border: 5px solid;
+    border-radius: 0;
+    background: radial-gradient(rgb(220, 220, 220), rgb(100, 100, 100));
+    border-image-source: linear-gradient(210deg, cyan, blue);
+    border-image-slice: 1;
+    clear: both;
+}
+#profile section{
+    background-color: rgba(0, 0, 255, 0.2);
+    flex-direction: column;
+    clear: both;
+    width: 310px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: small;
+    border-radius: 10px;
+}
+#profile section h1{
+    text-align: center;
+}
+#profile section li{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#intro{
+    contain: content;
+}
+#intro section{
+    text-align: justify;
+    clear: both;
+}
+#intro aside{
+    background-color: rgba(0, 0, 255, 0.2);
+    border-radius: 10px;
+    width: auto;
+    height: 200px;
+    padding: 5px;
+    clear: both;
+}
+#intro aside #tabbar{
+    display: flex;
+    width: fit-content;
+    height: auto;
+    overflow: auto;
+    list-style-type: none;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+#intro .tabs{
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+#intro .tabs::after{
+    content: "";
+    position: absolute;
+    background-color: cyan;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+#intro .tabs:hover::after{
+    width: 100%;
+}
+#intro .active-tab{
+    color: rgb(0, 190, 190);
+    text-shadow: 0 0 5px cyan;
+}
+#intro .pages{
+    margin: 0px 20px 20px 20px;
+    padding: 20px;
+    padding-top: 0;
+    display: none;
+}
+#intro #skills-page{
+    display: block;
+}
+#intro .pages img{
+    height: 50px;
+    width: auto;
+}
+
+@keyframes shadowAnimation {
+    0% {
+        box-shadow: 0 0 10px blue;
+    }
+    50% {
+        box-shadow: 0 0 60px blue;
+    }
+    100% {
+        box-shadow: 0 0 10px blue;
+    }
+}
