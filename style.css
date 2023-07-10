@@ -4,7 +4,6 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    /*background-color: rgb(137, 207, 240);*/
     margin: 0;
 }
 
@@ -50,22 +49,30 @@ body{
     float: left;
 }
 
+footer{
+    background-color: rgb(0, 0, 25);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+}
+
 /* --- Home Page --- */
 #home_main{
     display: flex;
-    justify-content: center;
-
     width: auto;
-    height: auto;
-    margin-top: 140px; 
+    height: 100vh;
+
 }
 #home_main div{
-    background-color: rgba(0, 0, 0, 0.75);
     display: flex;
+    background-color: rgba(0, 0, 0, 0.75);
     align-items: center;
-
     width: fit-content;
     height: fit-content;
+    margin: auto;
     padding: 20px;
     
     border-radius: 160px;
@@ -136,16 +143,29 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#profile section a{
+    text-decoration: none;
+    color: white;
+}
+#profile section a:hover{
+    text-decoration: underline;
+    color: cyan;
+}
 #intro{
     contain: content;
+    border: 5px solid;
+    border-color: rgba(0, 0, 255, 0.2);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 0;
 }
 #intro section{
     text-align: justify;
     clear: both;
+    padding: 20px;
 }
 #intro aside{
     background-color: rgba(0, 0, 255, 0.2);
-    border-radius: 10px;
     width: auto;
     height: 200px;
     padding: 5px;
@@ -155,7 +175,6 @@ body{
     display: flex;
     width: fit-content;
     height: auto;
-    overflow: auto;
     list-style-type: none;
     margin: 0;
     margin-left: auto;
