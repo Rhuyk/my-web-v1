@@ -12,3 +12,11 @@ function setCurrentTab(currentTab){
     var currentPage = currentTab.id + "-page";
     document.getElementById(currentPage).style.display = 'block';
 }
+function showResume(){
+    var resume = document.getElementById("resume");
+    if (resume.style.display == 'block') {
+        resume.style.display = 'none'
+    } else {
+        resume.style.display = 'block'
+    }
+}
