@@ -1,75 +1,130 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Feng-Min Hu: Software/AI Developer</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <script src="https://kit.fontawesome.com/5471c4b929.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    </head>
 
-    <body>
-        <nav class="navbar">
-            <ul>
-                <img src="my_logo_light.png">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
+<head>
+    <title>Feng-Min Hu: Software/AI Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5471c4b929.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
 
-        <main class="mains">
-            <h1 style="text-align: center;">Featured Projects</h1>
-            <div id="projects-top" class="container">
-                <div id="github">
-                    <h1>
-                        <i title="GitHub" style="font-size: 36px;" class="devicon-github-original"></i>
-                        GitHub
-                    </h1>
-                    <img class="pfp" src="github-pfp.jpeg">
-                    <div>
-                        <h2>Rhuyk</h2>
-                        <a href="https://github.com/Rhuyk">https://github.com/Rhuyk</a>
-                    </div>
+<body>
+    <nav class="navbar">
+        <ul>
+            <img src="my_logo_light.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <main class="mains">
+        <h1 style="text-align: center;">Featured Projects</h1>
+        <div id="projects-top" class="container">
+            <div id="github">
+                <h1>
+                    <i title="GitHub" style="font-size: 36px;" class="devicon-github-original"></i>
+                    GitHub
+                </h1>
+                <img class="pfp" src="github-pfp.jpeg">
+                <div>
+                    <h2>Rhuyk</h2>
+                    <a href="https://github.com/Rhuyk">https://github.com/Rhuyk</a>
                 </div>
-                <div id="featured-projects">
-                    <h2>Featured Projects</h2>
-                    <div class="project">
+            </div>
+            <div id="featured-projects">
+                <h2>AI Chess Game</h2>
+                <div class="project">
+                    <div class="project-container">
                         <img src="ai-chess.gif">
-                        <div class="project-caption">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla reiciendis recusandae sapiente aut quibusdam suscipit nemo exercitationem! Harum minima inventore saepe consequuntur non magnam asperiores, impedit quasi officiis facilis id!
+                        <div class="project-link-tab">
+                            <a href="https://github.com/pjsiri/AI-Chess-Game" target="_blank">Find out more</a>
                         </div>
                     </div>
+                    <div class="project-caption">
+                        <p>
+                            My most recent personal project is an AI Chess Game. You can play against an AI that I
+                            created using the minimax function, along with Zobrist Hashing and sorting techniques. The
+                            database program allows you to save, load, and replay historical matches.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <br><br><br><br>
-            <h1 style="text-align: center;">More Projects</h1>
-            <div class="container more-projects">
+        </div>
+        <br><br><br><br>
+        <h1 style="text-align: center;">More Projects</h1>
+        <div class="container more-projects">
+            <div class="project-container">
                 <img class="project-gifs" src="chess-game.gif">
-                <img class="project-gifs" src="maze.gif">
+                <div class="project-name-tab">
+                    <h1>
+                        <br><br>
+                        2-Player Chess Game
+                    </h1>
+                </div>
+                <div class="project-link-tab">
+                    <a href="https://github.com/Rhuyk/COMP603-Project-2-Chess" target="_blank">Find out more</a>
+                </div>
             </div>
-            <div class="container more-projects">
-                <img class="project-gifs" src="noise-removal.gif">
+            <div class="project-container">
                 <img class="project-gifs" src="phone-virus.gif">
+                <div class="project-name-tab">
+                    <h1>
+                        <br><br>
+                        Mobile Phone Virus Simulator
+                    </h1>
+                </div>
+                <div class="project-link-tab">
+                    Find out more
+                </div>
             </div>
-        </main>
+        </div>
+        <div class="container more-projects">
+            <div class="project-container">
+                <img class="project-gifs" src="noise-removal.gif">
+                <div class="project-name-tab">
+                    <h1>
+                        <br><br>
+                        Noise Removal App
+                    </h1>
+                </div>
+                <div class="project-link-tab">
+                    Find out more
+                </div>
+            </div>
+            <div class="project-container">
+                <img class="project-gifs" src="maze.gif">
+                <div class="project-name-tab">
+                    <h1>
+                        <br><br>
+                        Maze Program
+                    </h1>
+                </div>
+                <div class="project-link-tab">
+                    Find out more
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <footer>
-            Thanks for your visit!
-            <br>
-            I hope my portfolio left a positive impression.
-            <br>
-            Feel free to connect and share your thoughts.
-            <br>
-            <img style="height: 60px; margin: -5px;" src="footer-gif.gif">
-            <br>
-            <span style="font-size: smaller;">© 2023 Feng-Min Hu. All rights reserved.</span>
-        </footer>
-    </body>
+    <footer>
+        Thanks for your visit!
+        <br>
+        I hope my portfolio left a positive impression.
+        <br>
+        Feel free to connect and share your thoughts.
+        <br>
+        <img style="height: 60px; margin: -5px;" src="footer-gif.gif">
+        <br>
+        <span style="font-size: smaller;">© 2023 Feng-Min Hu. All rights reserved.</span>
+    </footer>
+</body>
 
-    <script>
+<script>
 
-    </script>
+</script>
+
 </html>
