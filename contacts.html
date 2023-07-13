@@ -10,7 +10,7 @@
     <body>
         <nav class="navbar">
             <ul>
-                <img src="my_logo_light.png">
+                <img src="images/my_logo_light.png">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -19,7 +19,50 @@
         </nav>
 
         <main class="mains">
-            <h3>The Contacts page (work in progress)</h3>
+            <h1 style="text-align: center;">Contact Me</h1>
+            <div class="container">
+                <div id="contacts">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone" style="color: cyan;"></i>
+                            &nbsp;
+                            (+64) 022 479 2854
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope" style="color: cyan;"></i>
+                            &nbsp;
+                            rh20020421@gmail.com
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github" style="color: cyan;"></i>
+                            &nbsp;
+                            <a class="link-hover-highlight" href="https://github.com/Rhuyk" target="_blank">github.com/Rhuyk</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-linkedin-in" style="color: cyan;"></i>
+                            &nbsp;
+                            <a class="link-hover-highlight" href="https://www.linkedin.com/in/feng-min-hu-28aa08281/" target="_blank">linkedin.com/in/feng-min-hu</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-twitter" style="color: cyan;"></i>
+                            &nbsp;
+                            <a class="link-hover-highlight" href="https://twitter.com/rhuykorich" target="_blank">@rhuykorich</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="message">
+                    <h2 style="text-align: center;">Send a Message</h2>
+                    <div id="form">
+                        <form action="https://formspree.io/f/xjvqvlnd" method="post">
+                            <input type="text" name="name" placeholder="Your Name" autocomplete="off" required>
+                            <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+                            <textarea rows="5" cols="60" name="message" placeholder="Enter your message" autocomplete="off" required></textarea>
+                            <br>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -29,7 +72,7 @@
             <br>
             Feel free to connect and share your thoughts.
             <br>
-            <img style="height: 60px; margin: -5px;" src="footer-gif.gif">
+            <img style="height: 60px; margin: -5px;" src="images/footer-gif.gif">
             <br>
             <span style="font-size: smaller;">© 2023 Feng-Min Hu. All rights reserved.</span>
         </footer>
